@@ -1,11 +1,8 @@
-// Agregar un evento para hacer que el texto parpadee
-const neonText = document.querySelector('.neon-text');
-
-setInterval(() => {
-  neonText.classList.toggle('blink');
-}, 500);
-
-// Estilo para el efecto de parpadeo
-.blink {
-  opacity: 0.5;
-}
+window.addEventListener('scroll', () => {
+  const div = document.querySelector('.herramientas');
+  if (window.scrollY > 500) { // Ajusta el punto de desplazamiento
+    div.classList.add('visible');
+  } else {
+    div.classList.remove('visible');
+  }
+});

@@ -1,4 +1,6 @@
 :root{
     --color-negro:black;
     --color-blanco: white;
+    --azul-oscuro: rgb(35, 32, 65);
+    --gris-oscuro: rgb(93, 90, 90);
 }

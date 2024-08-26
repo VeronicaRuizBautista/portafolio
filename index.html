@@ -8,14 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <main>
+    <main id="main">
         <div class="fondoborroso"></div>
         <section class="presentacion"> 
             <section class="bienvenida">
                 <div class="saludo">
+                    <i class='bx bxs-hand bx-tada' style='color:#dea343'  ></i>
                     <h2>¡Hola! Soy Verónica Ruíz</h2>
                 </div>
                 <div class="text-presentacion">
@@ -53,13 +56,16 @@
             </section>
         </section>
         <header class="menu">
-            <a href="#">Conocimientos</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Sobre mi</a>
+            <a href="#conocimientos">Conocimientos</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#">Sobre mi</a>                            
             <a href="#">Estudios</a>
         </header>
     </main>
-    <section class="section-conocimiento">
+    <section id="conocimientos" class="section-conocimiento           ">
+        <div class="atras">
+            <a href="#main"><i class='bx bx-arrow-back' style='color:#01d8d8' ></i></a>
+        </div>
         <div class="Conocimientos">
             <h1>Conocimientos</h1>
         </div>
@@ -71,50 +77,125 @@
                 <p>JavaScript</p>
             </div>
             <div class="box-herramienta">
+                <div class="icon-herramientas seventh">
+                    <i class='bx bxl-git' style='color:#c73024'  ></i>
+                </div>
+                <p>Git</p>
+            </div>
+            <div class="box-herramienta">
+                <div class="icon-herramientas third">
+                    <i class='bx bxl-nodejs' style='color:#30a036'  ></i>
+                </div>
+                <p>NodeJs</p>
+            </div>
+            <div class="box-herramienta">
+                <div class="icon-herramientas">
+                    <img src="storage/img/icons8-mysql-24.png">
+                </div>
+                <p>MySQL</p>
+            </div>
+            <div class="box-herramienta">
+                <div class="icon-herramientas fourth">
+                    <i class='bx bxl-mongodb' style='color:#2ac333'  ></i>
+                </div>
+                <p>MongoDB</p>
+            </div>
+            <div class="box-herramienta">
+                <div class="icon-herramientas fifth">
+                    <i class='bx bxl-react' style='color:#359fd8'  ></i>
+                </div>
+                <p>React</p>
+            </div>
+            <div class="box-herramienta">
+                <div class="icon-herramientas">
+                    <div class="express">ex</div>
+                </div>
+                <p>Express</p>
+            </div>
+            <div class="box-herramienta second">
                 <div class="icon-herramientas">
                     <i class='bx bxl-python' style='color:#3859b7'  ></i>
                 </div>
                 <p>Python</p>
             </div>
             <div class="box-herramienta">
-                <div class="icon-herramientas second">
-                    <i class='bx bxl-javascript' style='color:#f5d630'  ></i>
+                <div class="icon-herramientas html">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtklEQVR4nO3ZW2xMQRgH8L+oJogHxAPxghc8iMsDbyWoiHQ7s7UlrkFtUQ0pIUKIS0IqEtdQQVwiLhFEJG4JD3WL4EG0IajbnnO2u92DaovSjmxX9HycadeZYRPZL5lkk8k5Z357vpn5dhZIRzrS8f+GwVFncohUNoPho3cAw4uUAzieqwDupBpgctz2DDA5zqsOQBT/eWuYR+5xTgWwPxWAujnkHmWeAQbHxlQAameRSbxBBVCcCsD7GQSw2DPAYshPBcCe1nq9xRHwDsjFaNnArBndhW3b7bakYtNAAohOdTyLIcszwGQYJP12J2cIOxbTA1jViwCqA44U8mOgZ0CIoWdb6WFbIXVAc7MQSzIIwMprfcabAHp4Bgigg8HQKAPEqirVAfU2GXxzEZnAjfExQCVMDkMKqLhLBmsV9lOexN8WkvwPKQ2+BcDwUAq4f5UCSoYrAxoLCeCBDsBlGaCm/AwBhNeOUwZ8mk9S6JIywGA4IgVcOUQA1aX5yoD6uQ4Ax2EdgK0yQPT8dvVJfGM7AXycTQClygCTY7kUcGKDOuDSegL4MNPxDD+W6QDMkgEih5arA86WEMC76QQwUxlg+DFBCtgdVAccn0sANY4ywmDIVgaE8jDMSxEnncT3jlHAAT/pj+S3XhvKxVBlwGsf+mgFPL5IAbvGkv6wo4yIcPRWBogsZBgMTW6Dq16dRdIlevNc+4CqWxRQOoL0O1agZhFEJ+gIk6PGDRBeMoQAah6Vtw8IV1LA+gE/+5oWkWuj0BUGR6UbwJrXlwBioZcivC5bWIHM3wFLM4XYN0mIhnfSUvrrAvIGKnQCbrjm+NQuritP7G2ViF7YJcJrxgixJ1uIOwcTVadbLO30E/A5SFag6zoBp2ST1I5Y3pfRL3UkvRoKSCF3UhvAZNgp3Y3PbmtJnT8GxFOpfK/8OIVhh07AmjaXy7yOIrxilIic3ixir57KAfE0undUiLKcxJwo/uU4xVEHmQyrtQEMhvlJr/0OjP3qiRD1sTYHLWTHKRwFOgG5njayyRm//d5N9jglxOHTBghzjNK2E8t+Si6CiDhOIywfRuoD+NH/bwAaCxP1f3SKyx6Tg37aANZ4dNUBaCqC+FSQKJmdNY/ptkmOR1fojJa3wBA0OE4bHLXJAr4EE4e1UUeV6doYGkyGawbHStOHwfib8SaAziE/xpkMW0yO+17fjpH4B6gsfv4Z9aEbUhVJv51/+S2rvB2TYeKP3ftZS4t/ZpgY7/N843SkIx3/Z3wHrTGmPWk4PzUAAAAASUVORK5CYII=">
                 </div>
-                <p>NodeJs</p>
+                <p>HTML</p>
             </div>
             <div class="box-herramienta">
-                <div class="icon-herramientas">
-                    <i class='bx bxl-javascript' style='color:#f5d630'  ></i>
+                <div class="icon-herramientas  css">
+                    <i class='bx bxl-css3' style='color:#2488c7'  ></i>
                 </div>
-                <p>MySQL</p>
+                <p>CSS</p>
             </div>
             <div class="box-herramienta">
-                <div class="icon-herramientas">
-                    <i class='bx bxl-javascript' style='color:#f5d630'  ></i>
+                <div class="icon-herramientas docker">
+                    <i class='bx bxl-docker' style='color:#2488c7' ></i>
                 </div>
-                <p>MongoDB</p>
+                <p>Docker</p>
             </div>
             <div class="box-herramienta">
-                <div class="icon-herramientas">
-                    <i class='bx bxl-javascript' style='color:#f5d630'  ></i>
+                <div class="icon-herramientas flask">
+                    <i class='bx bxl-flask' style='color:#090a0a'  ></i>
                 </div>
-                <p>React</p>
-            </div>
-            <div class="box-herramienta">
-                <div class="icon-herramientas">
-                    <i class='bx bxl-javascript' style='color:#f5d630'  ></i>
-                </div>
-                <p>Express</p>
-            </div>
-            <div class="box-herramienta">
-                <div class="icon-herramientas">
-                    <i class='bx bxl-javascript' style='color:#f5d630'  ></i>
-                </div>
-                <p>Git</p>
+                <p>Flask</p>
             </div>
         </nav>
     </section> 
-    <script src="js/main.js"></script>
+    <section id="proyectos" class="section-proyectos">
+        <div class="atras">
+            <a href="#main"><i class='bx bx-arrow-back' style='color:#01d8d8' ></i></a>
+        </div>
+        <div class="Conocimientos">
+            <h1>Proyectos</h1>
+        </div>
+        <div class="proyectos">
+            <div class="proyecto">
+                <img src="storage/img/campusshop.PNG" alt="">
+                <h4>E-comerce <br>CampusShop</h4>
+                <a href="#">
+                    <button>Ver mas</button>
+                </a>
+            </div>
+            <div class="proyecto">
+                <img src="storage/img/campusshop.PNG" alt="">
+                <h4>E-comerce <br>CampusShop</h4>
+                <a href="#">
+                    <button>Ver mas</button>
+                </a>
+            </div>
+            <div class="proyecto">
+                <img src="storage/img/campusshop.PNG" alt="">
+                <h4>E-comerce <br>CampusShop</h4>
+                <a href="#">
+                    <button>Ver mas</button>
+                </a>
+            </div>
+            <div class="proyecto">
+                <img src="storage/img/foodlover.PNG" alt="">
+                <h4>E-comerce <br>CampusShop</h4>
+                <a href="https://veronicaruizbautista.github.io/foodLover/">
+                    <button>Ver mas</button>
+                </a>
+            </div>
+            <div class="proyecto">
+                <img src="storage/img/campusshop.PNG" alt="">
+                <h4>E-comerce <br>CampusShop</h4>
+                <a href="#">
+                    <button>Ver mas</button>
+                </a>
+            </div>
+            <div class="proyecto">
+                <img src="storage/img/campusshop.PNG" alt="">
+                <h4>E-comerce <br>CampusShop</h4>
+                <a href="#" class="visible">
+                    <button>Ver mas</button>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
 
