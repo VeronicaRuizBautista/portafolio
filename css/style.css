@@ -312,7 +312,7 @@ main{
     background-color: #03767e79;
     border: 1px solid rgb(1, 216, 216);
     box-shadow: 0 0 10px 0 rgb(1, 216, 216);
-    z-index: -10;
+    /* z-index: -10; */
     align-items: start;
 }
 .proyecto {
@@ -321,34 +321,67 @@ main{
     width: 20vw;
     height: 13vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family:"Kode Mono", sans-serif ;
 }
-.proyecto img{
-    position: absolute;
-    width: 20vw;
-    height: 25vh;
-    z-index: -3;
-    opacity: 0.6;
+.foodlover{
+    background-image: linear-gradient(#17171eb2, #4645456b), url("../storage/img/foodlover.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.proyecto a {
-   display: none;
+.campusShop{
+    background-image: linear-gradient(#17171e94, #4645458e), url("../storage/img/campusshop.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
-.proyecto button{
-    background-color: rgb(1, 216, 216);
-    width: 8vw;
-    height: 4vh;
+.planta{
+    background-image: linear-gradient(#17171e94, #4645458e), url("../storage/img/imagenjardin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
-.proyecto button:hover{
+
+.proyecto:hover {
     cursor: pointer;
+}
+
+.proyecto a {
+    display: none;
+ }
+ .proyecto button{
+    border: none;
+    margin-top: 1vw;
     box-shadow: 0 0 10px 0 rgb(1, 216, 216);
+
+    border-radius: 2vw;
+     background-color: #03767e;
+     width: 8vw;
+     height: 4vh;
+ }
+
+ .proyecto:hover a{
+     display: flex;
+ }
+/* 
+ .proyecto {
+    transform: scale(0.8) rotate(-10deg);
+    transition: all 0.5s ease-in-out;
 }
-.proyecto:hover a{
-    display: flex;
-}
+  
+  .proyecto.visible {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+    transform: scale(1.1);
+    animation: glitch 0.5s infinite;
+  
+} */
+
+
 .section-sobre-mi{
+    /* background-image:linear-gradient(#172e2d7a, #302c2c63), url("https://static.wixstatic.com/media/97b295_343224e0b87544f6b1e301fabbe07d6e~mv2.gif"); */
     width: 100%;
     height: 100vh;
     display: flex;
@@ -356,7 +389,33 @@ main{
     justify-content: space-evenly;
     flex-direction: column;
 }
-
+.section-sobre-mi .container{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mision,
+.vision{
+    font-size: 1vw;
+    flex-wrap: wrap;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #03767e79;
+    border: 1px solid rgb(1, 216, 216);
+    box-shadow: 0 0 10px 0 rgb(1, 216, 216);
+    font-family: "VT323", sans-serif;
+}
+.container p{
+    width: 70%;
+    font-family: "Kode Mono", sans-serif;
+}
 .section-estudios{
     width: 100%;
     height: 100vh;
