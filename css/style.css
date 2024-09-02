@@ -528,16 +528,22 @@ main{
     color: #01d8d8;
     /* text-shadow:  0 0 1px rgb(10, 233, 233), 0 0 10px rgb(6, 226, 226), 0 0 10px rgb(16, 227, 227); */
 }
+.abrir{
+    display: none;
+}
 
 @media(max-width: 500px){
     body{
         margin: 0;
         padding: 0;
         width: 100%;
+        /* background-color: #ecd60a; */
     }
     .abrir{
         width: 2vw;
         height: 2vh;
+        display: block;
+        border-radius: 2vw;
     }
     .presentacion{
         
@@ -566,14 +572,111 @@ main{
     .menu{
         display: none;
     }
-    .contacto{
+    .menu.visible{
+        display: flex;
+        position: absolute;
         width: 100%;
+        background-color: var(--color-negro);
+    }
+    .menu.visible a{
+        font-size: 5vw;
+    }
+    .contacto{
+        /* background-color: red; */
+        width: 80%;
         height: 30vh;
         flex-direction: column;
     }
-    .contacto a, 
-    .contacto img,
-    .contacto i{
+    .red{
+        display: flex;
+        height: 5vh;
+        align-items: center;
+        width: 60%;
+        /* background-color: #01d8d8; */
+    }
+    .contacto a {
+        font-size: 6vw;
+    }
+    .contacto i {
+        font-size: 6vw;
+    }
+    .contacto img {
+        width: 5vw;
+        height: 2vh;
+    }
+    .herramientas{
+        /* background-color: rebeccapurple; */
+        width: 80%;
+        justify-content: center;
+    }
+    .box-herramienta{
+        /* background-color: forestgreen; */
+        width: 20vw;
+    }
+    .box-herramienta p{
+        font-size: 2.4vw;
+    }
+    .box-herramienta div img{
+        width: 3vw;
+        height: 1.5vh;
+    }
+    .box-herramienta div i{
+        font-size: 3vw;
+    }
+    .box-herramienta .express{
+        width: 3vw;
+        height: 1.5vh;
+    }
+    .proyectos{
+        /* background-color: tan; */
+        height: 60vh;
+        align-items: center;
+
+    }
+    .proyecto{
+        width: 30vw;
+        height: 10vh;
+    }
+    .hi{
+        display: none;
+    }
+    .hi img{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        /* background-color: tomato; */
+        gap: 3vh;
+
+    }
+    .mision,
+    .vision {
+        /* background-color: rebeccapurple; */
+        width: 70vw;
+        height: 60vh;
+        font-size: 2.5vw;
+    }
+    .mision h2,
+    .vision h2{
+        font-size: 7vw;
+    }
+    .timeline-container{
+        font-size: 3vw;
+    }
+    .Contactame{
+        width: 80%;
+        font-size: 8vw;
+    }
+    .abrir{
+        left: 4vw;
+        top: 4vh;
+        position: absolute;
+        border: none;
+        width: 10vw;
+        height: 3vh;
+        background-color: #800080;
+    }
+    .atras i{
         font-size: 6vw;
     }
 }

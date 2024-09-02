@@ -20,12 +20,11 @@ window.addEventListener('scroll', () => {
 });
 
 function botonMenu() {
-  var menus = document.querySelectorAll('abrir"]');
+  var menus = document.querySelectorAll('.menu');
   menus.forEach(function(menu) {
       menu.classList.toggle("visible");
   });
 }
-
 const circle = document.querySelector('.circle');
 const events = document.querySelectorAll('.event');
 const timelineHeight = document.querySelector('.timeline').clientHeight; // Obtener la altura de la línea de tiempo
