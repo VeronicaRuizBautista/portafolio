@@ -28,7 +28,7 @@ function botonMenu() {
 const circle = document.querySelector('.circle');
 const events = document.querySelectorAll('.event');
 const timelineHeight = document.querySelector('.timeline').clientHeight; // Obtener la altura de la línea de tiempo
-const eventHeight = 150
+const eventHeight = 200
 
 let currentEvent = 1;
 

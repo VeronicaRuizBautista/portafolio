@@ -144,7 +144,7 @@ main{
     align-items: center;
 }
 .contacto a:hover{
-    text-shadow: 0 0 1px #800080, 0 0 3px #800080, 0 0 5px #800080;
+    text-shadow: 0 0 1px #800080, 0 0 18px #800080, 0 0 15px #800080;
 }
 .main{
     background-color: blanchedalmond;
@@ -342,6 +342,18 @@ main{
 }
 .planta{
     background-image: linear-gradient(#17171e94, #4645458e), url("../storage/img/imagenjardin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.cinecampus{
+    background-image: linear-gradient(#17171e94, #4645458e), url("../storage/img/cinecampus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.encriptador{
+    background-image: linear-gradient(#17171e94, #4645458e), url("../storage/img/encriptador.png");
     background-repeat: no-repeat;
     background-size: cover;
     
