@@ -551,6 +551,9 @@ main{
         width: 100%;
         /* background-color: #ecd60a; */
     }
+    .saludo i{
+        font-size: 6vw;
+    }
     .abrir{
         width: 2vw;
         height: 2vh;
