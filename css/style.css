@@ -22,6 +22,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    box-shadow: 0 0 10px rgb(10, 233, 233) ;
 }
 
 .menu a {
