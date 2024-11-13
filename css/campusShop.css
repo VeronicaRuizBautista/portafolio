@@ -53,6 +53,11 @@ main{
     aspect-ratio: 20 / 43;
     /* background-color: rebeccapurple; */
 }
+.muestra2 {
+    width: 50%;
+    aspect-ratio: 20 / 23;
+    /* background-color: rebeccapurple; */
+}
 .muestra iframe {
     width: 100%;
     height: 100%;

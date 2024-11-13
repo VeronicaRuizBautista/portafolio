@@ -357,12 +357,7 @@ main{
     background-size: cover;
     
 }
-.planta{
-    background-image: linear-gradient(#17171e94, #4645458e), url("../storage/img/imagenjardin.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
+
 .cinecampus{
     background-image: linear-gradient(#17171e94, #4645458e), url("../storage/img/cinecampus.png");
     background-repeat: no-repeat;
